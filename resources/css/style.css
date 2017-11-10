@@ -1,0 +1,26 @@
+html {
+  font-size: 12px;
+}
+
+/* navbar styling */
+.header-name {
+  margin-right: 2rem;
+}
+
+/* jumbotron styling */
+.jumbotron .container-fluid {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 40rem;
+  justify-content: center;
+}
+
+.jumbotron p {
+  text-align: center;
+}
+
+/* resume section */
+
+
+/* projects section */
