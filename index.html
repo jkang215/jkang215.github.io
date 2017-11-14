@@ -5,8 +5,13 @@
     <title>Portfolio: Jeff Kang</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./resources/js/main.js"></script>
   </head>
   <body>
     <!-- navbar -->
@@ -15,8 +20,8 @@
       <div class="container-fluid">
         <ul class="nav navbar-nav">
           <li><a href="https://jkang215.github.io/">Home</a></li>
-          <li><a href="#resume">Resume</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
         </ul>
       </div>
     </nav>
@@ -24,14 +29,112 @@
     <!-- jumbotron -->
     <div class="jumbotron">
       <div class="container-fluid">
-        <h1>JEFF KANG</h1>
-        <p>Welcome to my online portfolio!<br>Here you can find a website version of my resume and a spotlight of some of my software projects.</p>
+        <h1>Jeff Kang</h1>
+        <p>Welcome to my online portfolio!<br>Here you can find a spotlight of some of my software projects and a website version of my resume.</p>
+      </div>
+    </div>
+
+    <!-- projects section -->
+    <div id="projects" class="container">
+      <div class="row projects-header">
+        <div class="col-xs-12">
+          <h1>PROJECTS</h1>
+        </div>
       </div>
     </div>
 
     <!-- resume section -->
-
-    <!-- projects section -->
+    <div id="resume" class="container-fluid">
+      <div class="row resume-header">
+        <div class="col-xs-12">
+          <h1>RESUME</h1>
+        </div>
+      </div>
+      <div class="row work-exp">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-md-10">
+          <h1>Work Experience</h1>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-md-2">
+          <a href="https://www.fitguard.me/"><img src="./resources/images/fit-logo.jpg" alt="Image: FIT Logo"></a>
+        </div>
+        <div class="col-xs-12 col-md-8">
+          <h2>Force Impact Technologies</h2>
+          <h4>September 2014 - January 2017</h4>
+          <span><i>Business Operations/Team Leader</i></span>
+          <ul>
+            <li>Led engineers as Project Manager to design a prototype smart mouthguard with wireless charging</li>
+            <li>Performed market analysis to support funding agreement of $100,000 at 10% for $1M valuation</li>
+            <li>Developed launch strategy and crowdfunding campaign for the introductory product: The FITGuard</li>
+            <li>Attended startup competitions and shows such as CES to gather networking contacts and increase media coverage for the FITGuard</span>
+          </ul>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-md-2">
+          <a href="https://www.brandboom.com/"><img src="./resources/images/brandboom-logo.png" alt="Image: Brandboom Logo"></a>
+        </div>
+        <div class="col-xs-12 col-md-8">
+          <h2>Brandboom</h2>
+          <h4>September 2012 - July 2013</h4>
+          <span><i>Marketing/User Interface Intern</i></span>
+          <ul>
+            <li>Sent email pitches for the SaaS product to fashion designers and retailers, grew client base by 25%</li>
+            <li>Advised in website design and built a customer support interface based on user experience principles</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row education">
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-md-10">
+          <h1>Education</h1>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-md-10">
+          <h2>University of Southern California</h2>
+          <h4>Major: <strong>Computer Science/Business Administration (B.S.)</strong></h4>
+          <span>Graduated: May 2016<br></span>
+          <span>GPA: 3.55</span>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-md-2">
+          <a href="https://www.deltasigmapi.org/"><img src="./resources/images/dsp-logo.png" alt="Image: Delta Sigma Pi Logo"></a>
+        </div>
+        <div class="col-xs-12 col-md-8">
+          <h2>Leadership: Delta Sigma Pi Professional Business Fraternity</h2>
+          <span><i>President</i></span>
+          <ul>
+            <li>Led an executive committee to run a collegiate chapter of over 70 members</li>
+            <li>Facilitated weekly business meetings, increasing overall attendance by 50% and achieving national Chapter of Excellence status</li>
+          </ul>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-xs-12 col-md-10">
+          <h2>Notable Coursework</h2>
+          <h4>CSCI 401 - <strong>Capstone: Design and Construction of Large Software Systems</strong></h4>
+          <ul>
+            <li>Created a software system that distributes quizzes via push notifications to student smartphones that will be used by USC professors</li>
+            <li>Led the software team as project manager implementing Agile/Scrum development methods</li>
+          </ul>
+          <h4>CSCI 310 - <strong>Software Engineering</strong></h4>
+          <ul>
+            <li>Led a software team to design and build a website to parse scholarly articles by field and create a “word cloud” of popular keywords based on stakeholder requirements</li>
+          </ul>
+          <h4>CSCI 270 - <strong>Algorithms and Theory of Computing</strong></h4>
+          <ul>
+            <li>Studied complexity and theories of various algorithmic methods including dynamic programming, greedy algorithms, network flow, and NP-complete problems</li>
+          </ul>
+          <h4>ITP 435 - <strong>Professional C++</strong></h4>
+          <ul>
+            <li>Built programs such as a file compressor, password cracker, mock “MS Paint,” and custom compiler using principles of effective and readable C++</li>
+          </ul>
+          <h4>ITP 325 - <strong>Ethical Hacking</strong></h4>
+          <ul>
+            <li>Used penetration testing methods to find and exploit software vulnerabilities and studied networking fundamentals</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>

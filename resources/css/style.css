@@ -2,6 +2,14 @@ html {
   font-size: 12px;
 }
 
+i {
+  font-style: italic;
+}
+
+ul {
+  list-style: circle inside none;
+}
+
 /* navbar styling */
 .header-name {
   margin-right: 2rem;
@@ -16,11 +24,31 @@ html {
   justify-content: center;
 }
 
+.jumbotron h1 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 8rem;
+  margin-bottom: 3rem;
+}
+
 .jumbotron p {
   text-align: center;
 }
 
-/* resume section */
-
-
 /* projects section */
+
+
+/* resume section */
+#resume .resume-header {
+  text-align: center;
+  width: 100%;
+}
+
+#resume img {
+  height: auto;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.education {
+  background-color: grey;
+}
