@@ -1,5 +1,5 @@
-//Starts the slick carousel upon document ready
 $(document).ready(function(){
+  //Hides scroll bar upon scrolling down
   var scrollY = 0;
   $(window).scroll(function() {
     var top = $(this).scrollTop();

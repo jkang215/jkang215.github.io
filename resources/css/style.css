@@ -1,5 +1,10 @@
 html {
-  font-size: 12px;
+  font-size: 14px;
+}
+
+body {
+  font-family: Helvetica;
+  line-height: 1.5;
 }
 
 i {
@@ -8,6 +13,10 @@ i {
 
 ul {
   list-style: circle inside none;
+}
+
+img:hover {
+  opacity: 0.8;
 }
 
 /* navbar styling */
@@ -26,8 +35,9 @@ ul {
 
 .jumbotron h1 {
   font-family: 'Cinzel Decorative', serif;
-  font-size: 8rem;
+  font-size: 7rem;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .jumbotron p {
@@ -35,20 +45,61 @@ ul {
 }
 
 /* projects section */
+#projects {
+  padding-bottom: 3rem;
+}
 
+#projects .projects-header {
+  text-align: center;
+}
+
+#projects img {
+  height: auto;
+  width: 100%;
+}
+
+.prj-description {
+  height: 9rem;
+}
+
+.prj-links {
+  align-items: center;
+  display: flex;
+}
+
+.prj-links a {
+  margin: 1rem 2rem 0 0;
+}
 
 /* resume section */
 #resume .resume-header {
   text-align: center;
-  width: 100%;
 }
 
 #resume img {
   height: auto;
   width: 100%;
-  vertical-align: middle;
 }
 
 .education {
   background-color: grey;
+  background-image: url("../images/tommy-trojan.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 3rem;
+}
+
+/* footer */
+footer {
+  align-items: center;
+  background-color: lightgrey;
+  display: flex;
+  height: 8rem;
+  justify-content: center;
+  width: 100%;
+}
+
+footer span {
+  color: grey;
 }
