@@ -1,4 +1,15 @@
 $(document).ready(function(){
+  //Starts carousel on document ready
+  $('.carousel').slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    draggable: false,
+    focusOnSelect: false,
+    pauseOnHover: false,
+    slidesToScroll: 1
+  });
+
   //Hides scroll bar upon scrolling down
   var scrollY = 0;
   $(window).scroll(function() {

@@ -5,13 +5,15 @@
     <title>Portfolio: Jeff Kang</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:700|Overpass:400,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
             crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="./resources/js/main.js"></script>
   </head>
   <body>
@@ -27,12 +29,15 @@
       </div>
     </nav>
 
-    <!-- jumbotron -->
-    <div class="jumbotron">
-      <div class="container-fluid">
-        <h1>Jeff Kang</h1>
-        <p>Welcome to my online portfolio!<br>Here you can find a spotlight of some of my software projects and a website version of my resume.</p>
-      </div>
+    <!-- jumbotron w/ carousel -->
+    <div class="carousel">
+      <div class="jumbotron jumbotron-dsp"></div>
+      <div class="jumbotron jumbotron-scuba"></div>
+      <div class="jumbotron jumbotron-grad"></div>
+    </div>
+    <div class="jumbotron-text">
+      <h1>Jeff Kang</h1>
+      <p>Welcome to my online portfolio!<br>Here you can find a spotlight of some of my software projects and a website version of my resume.</p>
     </div>
 
     <!-- projects section -->
@@ -42,7 +47,7 @@
           <h1>PROJECTS</h1>
         </div>
       </div>
-      <div class="row">
+      <div class="row codecademy-progression">
         <div class="col-xs-12">
           <h2>Codecademy Progression</h2>
           <span>I recently completed a program from Codecademy called "Build Websites from Scratch." The following three projects show the stages of my progression learning HTML and CSS.</span>
@@ -50,7 +55,9 @@
         <div class="col-xs-12 col-md-4">
           <div class="prj-description">
             <h3>Project 1: Dasmoto's Arts and Crafts</h3>
-            <span>A simple exercise in HTML structuring and basic CSS styling.<br>Based off <a href="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/dasmotos-arts_redline.jpg" target="_blank">this</a> design document.</span>
+            <span>A simple exercise in HTML structuring and basic CSS styling.</span>
+            <span>Based off <a href="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/dasmotos-arts_redline.jpg" target="_blank">this</a> design document.</span>
+            <span><i>Languages used: HTML, CSS</i></span>
           </div>
           <div class="prj-links">
             <a href="https://jkang215.github.io/prj-rev-bwfs-dasmoto/Dasmoto/" class="btn btn-primary btn-lg" target="_blank">See Website</a>
@@ -60,7 +67,9 @@
         <div class="col-xs-12 col-md-4">
           <div class="prj-description">
             <h3>Project 2: TeaCozy</h3>
-            <span class="prj-description">A website built with more advanced CSS styling after learning flexbox and the box model.<br>Based off <a href="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-tea-cozy-redline.jpg" target="_blank">this</a> design document.</span>
+            <span>A website built with more advanced CSS styling after learning flexbox and the box model.</span>
+            <span>Based off <a href="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-tea-cozy-redline.jpg" target="_blank">this</a> design document.</span>
+            <span><i>Languages used: HTML, CSS</i></span>
           </div>
           <div class="prj-links">
             <a href="https://jkang215.github.io/TeaCozy/" class="btn btn-primary btn-lg" target="_blank">See Website</a>
@@ -70,11 +79,55 @@
         <div class="col-xs-12 col-md-4">
           <div class="prj-description">
             <h3>Project 3: Colmar Academy</h3>
-            <span class="prj-description">A responsive website that adjusts styling for mobile screen sizes.<br>Based off <a href="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-2/colmar-academy-spec.png" target="_blank">this</a> wireframe document.</span>
+            <span>A responsive website that adjusts styling for mobile screen sizes.</span>
+            <span>Based off <a href="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/capstone-2/colmar-academy-spec.png" target="_blank">this</a> wireframe document.</span>
+            <span><i>Languages used: HTML, CSS</i></span>
           </div>
           <div class="prj-links">
             <a href="https://jkang215.github.io/ColmarAcademy/" class="btn btn-primary btn-lg" target="_blank">See Website</a>
             <a href="https://github.com/jkang215/ColmarAcademy/" target="_blank"><i class="fa fa-github fa-4x"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row codecademy-final">
+        <div class="col-xs-12">
+          <h2>Codecademy Final Projects</h2>
+          <span>Advanced projects made after learning Bootstrap, JavaScript, and JQuery. Built using a test-driven development process.</span>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="prj-description">
+            <h3>Match Game</h3>
+            <span>A matching game built using JavaScript and JQuery.</span>
+            <span>Based off <a href="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-8/Match+Game/spec.png" target="_blank">this</a> design document.</span>
+            <span><i>Languages used: HTML, Bootstrap/CSS, JavaScript, JQuery</i></span>
+          </div>
+          <div class="prj-links">
+            <a href="https://jkang215.github.io/MatchGame/" class="btn btn-primary btn-lg" target="_blank">See Website</a>
+            <a href="https://github.com/jkang215/MatchGame" target="_blank"><i class="fa fa-github fa-4x"></i></a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="prj-description">
+            <h3>Trackster</h3>
+            <span>A music search website that makes API requests to the LastFM server and loads them using JavaScript and JQuery.</span>
+            <span>Based off <a href="https://s3.amazonaws.com/codecademy-content/projects/trackster/spec.png" target="_blank">this</a> design document.</span>
+            <span><i>Languages used: HTML, Bootstrap/CSS, JavaScript, JQuery</i></span>
+          </div>
+          <div class="prj-links">
+            <a href="https://jkang215.github.io/Trackster/" class="btn btn-primary btn-lg" target="_blank">See Website</a>
+            <a href="https://github.com/jkang215/Trackster" target="_blank"><i class="fa fa-github fa-4x"></i></a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="prj-description">
+            <h3>Jumpstart</h3>
+            <span>A responsive website (desktop/mobile) featuring Bootstrap elements that includes a carousel plugin.</span>
+            <span>Based off <a href="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-8/Jumpstart/jumpstart-specs.jpg" target="_blank">this</a> wireframe document.</span>
+            <span><i>Languages used: HTML, Bootstrap/CSS, JavaScript, JQuery</i></span>
+          </div>
+          <div class="prj-links">
+            <a href="https://jkang215.github.io/Jumpstart/" class="btn btn-primary btn-lg" target="_blank">See Website</a>
+            <a href="https://github.com/jkang215/Jumpstart/" target="_blank"><i class="fa fa-github fa-4x"></i></a>
           </div>
         </div>
       </div>
@@ -97,7 +150,7 @@
           <a href="https://www.fitguard.me/" target="_blank"><img src="./resources/images/fit-logo.jpg" alt="Image: FIT Logo"></a>
         </div>
         <div class="col-xs-12 col-md-8">
-          <h2>Force Impact Technologies</h2>
+          <h3>Force Impact Technologies</h3>
           <h4>September 2014 - January 2017</h4>
           <span><i>Business Operations/Team Leader</i></span>
           <ul>
@@ -112,7 +165,7 @@
           <a href="https://www.brandboom.com/" target="_blank"><img src="./resources/images/brandboom-logo.png" alt="Image: Brandboom Logo"></a>
         </div>
         <div class="col-xs-12 col-md-8">
-          <h2>Brandboom</h2>
+          <h3>Brandboom</h3>
           <h4>September 2012 - July 2013</h4>
           <span><i>Marketing/User Interface Intern</i></span>
           <ul>
@@ -128,7 +181,7 @@
         </div>
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-md-10">
-          <h2>University of Southern California</h2>
+          <h2><strong>University of Southern California</strong></h2>
           <h4>Major: <strong>Computer Science/Business Administration (B.S.)</strong></h4>
           <span>Graduated: May 2016<br></span>
           <span>GPA: 3.55</span>
@@ -138,7 +191,7 @@
           <a href="https://www.deltasigmapi.org/" target="_blank"><img src="./resources/images/dsp-logo.png" alt="Image: Delta Sigma Pi Logo"></a>
         </div>
         <div class="col-xs-12 col-md-9">
-          <h2>Leadership: Delta Sigma Pi Professional Business Fraternity</h2>
+          <h3>Leadership: Delta Sigma Pi Professional Business Fraternity</h3>
           <span><i>President</i></span>
           <ul>
             <li>Led an executive committee to run a collegiate chapter of over 70 members</li>
@@ -147,7 +200,7 @@
         </div>
         <div class="col-md-2"></div>
         <div class="col-xs-12 col-md-10">
-          <h2>Notable Coursework</h2>
+          <h3>Notable Coursework</h3>
           <h4>CSCI 401 - <strong>Capstone: Design and Construction of Large Software Systems</strong></h4>
           <ul>
             <li>Created a software system that distributes quizzes via push notifications to student smartphones that will be used by USC professors</li>

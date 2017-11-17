@@ -1,9 +1,10 @@
+/* general styling */
 html {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 body {
-  font-family: Helvetica;
+  font-family: "Overpass", sans-serif;
   line-height: 1.5;
 }
 
@@ -11,7 +12,13 @@ i {
   font-style: italic;
 }
 
+p,
+span {
+  font-size: 1rem;
+}
+
 ul {
+  font-size: 1rem;
   list-style: circle inside none;
 }
 
@@ -25,22 +32,56 @@ img:hover {
 }
 
 /* jumbotron styling */
-.jumbotron .container-fluid {
+.jumbotron {
+  height: 35rem;
+}
+
+.jumbotron-dsp {
+  background-image: url('../images/background-dsp.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.jumbotron-scuba {
+  background-image: url('../images/background-scuba.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.jumbotron-grad {
+  background-image: url('../images/background-grad.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.jumbotron-text {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 40rem;
   justify-content: center;
+  position: absolute;
+  top: 180px;
+  left: 0;
+  text-shadow: -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white, 1px 1px 1px white;
+  width: 100%;
+  z-index: 20;
 }
 
-.jumbotron h1 {
+.jumbotron-text h1 {
   font-family: 'Cinzel Decorative', serif;
-  font-size: 7rem;
+  font-size: 6rem;
   margin-bottom: 3rem;
   text-align: center;
 }
 
-.jumbotron p {
+.jumbotron-text p {
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -53,18 +94,34 @@ img:hover {
   text-align: center;
 }
 
+#projects h1 {
+  font-weight: bold;
+}
+
 #projects img {
   height: auto;
   width: 100%;
 }
 
+.codecademy-progression {
+  margin-bottom: 2rem;
+}
+
 .prj-description {
-  height: 9rem;
+  border-top: 1px solid lightgrey;
+  height: 13.5rem;
+}
+
+.prj-description span {
+  display: block;
+  margin-bottom: 2px;
 }
 
 .prj-links {
   align-items: center;
+  border-top: 1px solid lightgrey;
   display: flex;
+  justify-content: center;
 }
 
 .prj-links a {
@@ -73,12 +130,22 @@ img:hover {
 
 /* resume section */
 #resume .resume-header {
+  border-top: 2px solid lightgrey;
+  padding-top: 2rem;
   text-align: center;
+}
+
+#resume h1 {
+  font-weight: bold;
 }
 
 #resume img {
   height: auto;
   width: 100%;
+}
+
+.work-exp {
+  padding-bottom: 3rem;
 }
 
 .education {
@@ -94,6 +161,7 @@ img:hover {
 footer {
   align-items: center;
   background-color: lightgrey;
+  border-top: 1px solid grey;
   display: flex;
   height: 8rem;
   justify-content: center;
