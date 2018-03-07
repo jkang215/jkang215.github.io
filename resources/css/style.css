@@ -113,7 +113,8 @@ img:hover {
   width: 100%;
 }
 
-.codecademy-progression {
+.codecademy-progression,
+.codecademy-final {
   margin-bottom: 2rem;
 }
 
